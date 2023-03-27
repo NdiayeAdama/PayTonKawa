@@ -3,12 +3,15 @@ pipeline {
  
     environment {
         PATH = "C:/Users/adama/Desktop/MSPR_ERP/flutter/bin"
+        PATH_1 = 'C:/Windows/System32'
+        PATH_2 = 'C:/Program Files/Git/cmd'
+        PATH_3 = 'C:/Program Files/Git/bin/git.exe'
     }
 
     stages{
         stage('Paytonkawa checkout') { 
             steps {
-                git branch:'develop',url:'https://github.com/NdiayeAdama/PayTonKawa.git'
+                git branch:'main',url:'https://github.com/NdiayeAdama/PayTonKawa.git'
                 }
 
         }
